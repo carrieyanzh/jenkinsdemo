@@ -1,4 +1,5 @@
 node {  
+    agent { lable 'Built-In Node' }
     stage('Build') { 
         echo 'Starting Build Stage carrie build1'    
         echo 'Build Stage completed successfully carrie build2'
