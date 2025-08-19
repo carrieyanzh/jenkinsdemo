@@ -1,4 +1,12 @@
 node {
+     def mvnHome = tool name: 'Maven3', type: 'maven'
+    env.PATH = "${mvnHome}/bin:${env.PATH}"
+
+    stage('Build 1') {
+        // Use 'sh' to run shell commands
+        sh "mvn -version"
+    }
+    
     stage('Build') {
         def mvnHome = tool 'Maven3' // Must match name in Jenkins tool config
         sh "${mvnHome}/bin/mvn clean install"
