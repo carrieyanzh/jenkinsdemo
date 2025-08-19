@@ -1,7 +1,8 @@
 node {  
     agent { lable 'Built-In Node aaaa' }
     stage('Build') { 
-        echo 'Starting Build Stage carrie build11'    
+        sh 'mvn clean install'
+        echo 'Starting Build Stage carrie build11---1'    
         echo 'Build Stage completed successfully carrie build21'
     }
     stage('Test') { 
