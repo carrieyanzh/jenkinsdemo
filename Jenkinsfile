@@ -1,15 +1,15 @@
 node {  
     agent { lable 'Built-In Node' }
     stage('Build') { 
-        echo 'Starting Build Stage carrie build1'    
-        echo 'Build Stage completed successfully carrie build2'
+        echo 'Starting Build Stage carrie build11'    
+        echo 'Build Stage completed successfully carrie build21'
     }
     stage('Test') { 
-        echo 'Starting Test Stage carrie test1'    
-        echo 'Test Stage completed successfully carrie test2'
+        echo 'Starting Test Stage carrie test12'    
+        echo 'Test Stage completed successfully carrie test22'
     }
     stage('Deploy') { 
-        echo 'Starting Deploy Stage carrie deploy1'
-        echo 'Deploy Stage completed successfully carrie deploy2'
+        echo 'Starting Deploy Stage carrie deploy13'
+        echo 'Deploy Stage completed successfully carrie deploy23'
     }
 }
