@@ -1,4 +1,4 @@
-node('Built-In Node') {
+node {
     stage('Build') {
         def mvnHome = tool 'Maven3' // Must match name in Jenkins tool config
         sh "${mvnHome}/bin/mvn clean install"
