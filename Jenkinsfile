@@ -1,4 +1,4 @@
-node {
+node ('test-server'){
     mvnHome = tool name: 'Maven3', type: 'maven'
     env.PATH = "${mvnHome}/bin:${env.PATH}"
 
