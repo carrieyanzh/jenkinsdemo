@@ -1,5 +1,8 @@
 node {  
     agent { lable 'Built-In Node aaaa' }
+    tools {
+        maven 'Maven3'  // name configured in Jenkins tools
+    }
     stage('Build') { 
         sh 'mvn clean install'
         echo 'Starting Build Stage carrie build11---1'    
